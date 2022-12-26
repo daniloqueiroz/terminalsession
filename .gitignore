@@ -1,0 +1,6 @@
+# directories created by makepkg
+terminalsession/
+pkg/
+src/
+
+terminalsession*.pkg.tar.zst

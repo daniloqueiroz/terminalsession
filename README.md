@@ -31,7 +31,7 @@ to display the name of the current session in your prompt.
 * `tsctl list` - list all existing sessions
 * `tsctl attach <session_name>` - attach to an existing session or create & attach to a new one session
 * `tsctl kill <session_name>` - kills an existing session (sends **SIGTERM** signal)
-* `tscl` - launch interactive mode
+* `tsctl` - launch interactive mode
 
 Once attached to a session, use **C-a** to detach from it.
 
@@ -39,5 +39,5 @@ In interactive mode:
 - select an exising session from the list and press **enter** to attach to it
 - type the name for a new session and press **enter** to create & attach to it
 - select an existing session an press **C-k** to kill it
-- press **C-r** reload the session list
+- press **C-r** to reload the session list
 - press **C-h** for help
