@@ -1,8 +1,8 @@
 # Maintainer: Danilo Queiroz <dpenna.queiroz@gmail.com>
 pkgname=terminalsession
-pkgver=r2.9c56ee3
+pkgver=1.0
 pkgrel=1
-pkgdesc="A very simple terminal session manager built on top of dtach and fzf (for interactive mode)."
+pkgdesc="A very simple terminal session manager built on top of dtach and fzf."
 arch=('x86_64')
 url="https://github.com/daniloqueiroz/terminalsession"
 license=('GPL3')
@@ -19,5 +19,5 @@ package() {
 
 pkgver() {
   cd "${srcdir}/${pkgname}"
-  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+  git describe --long --tags | sed 's/-/.r/;s/-/./'
 }
